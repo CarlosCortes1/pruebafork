@@ -1,0 +1,62 @@
+ *{
+     margin: 0;
+     padding: 0; /* Margen y padding para todo el documento en 0*/
+ }
+ #sidebar{
+    position: fixed;
+    /*Generaunaposiciónfijaparaelmenú*/width: 200px;
+    height: 100%;
+    background: #151719;
+    left: -200px;
+    transition: all 500ms linear;  /*Ejecutamos una transición para que el cambio no sea brusco*/
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+}
+ #sidebar.active{
+     left: 0;
+ }
+ #sidebar ul li {
+     color: rgb(230, 230,230, .9);
+     text-align: center;  /* Centra todos los elementos de la lista*/
+     border-bottom: 1px solid rgb(100, 100, 100, .3);
+     list-style: none ;
+     padding: 15px 10px;
+     ;
+ }
+ .logo{ /* Se le asigna una posición de bloque al logo para que no se mueva y se centre*/
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     display: block;
+     margin: 0 auto;
+}
+#sidebar .toggle-btn { /* A las tres rayitas se le asigna una posición */
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn  span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid;  
+}
+#nuevo .boton  span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid;  
+}
+#nuevo .boton {
+    position: absolute;
+    left: 400px;
+    top: 20px;
+    cursor: pointer;
+}
